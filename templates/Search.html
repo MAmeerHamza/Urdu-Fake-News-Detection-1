@@ -4,20 +4,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Urdu Fake News Detection</title>
-  <link href="Search.css" rel="stylesheet">
+  <link href="/static/search.css" rel="stylesheet">
+ 
+{% block Head %}{% endblock %}
+
 </head>
 <body>
+  {% block body %}
+  {% endblock %}
   <div class="container">
     <div clas='img'>
-      <img src="search.jpg" alt="">
+      <img src="/static/search.jpg" alt="">
     </div>
     <div class='form'>
       <h2> Search the News</h2>
-      <form action="">
+      <form action="" method="POST">
         <input type="link" placeholder='Search News'>
         <div class='check'>
           
-        <button><strong>Check News</strong></button>
+        <button type="submit" ><strong>Check News</strong></button>
       </form>
     </div>
   </div>
